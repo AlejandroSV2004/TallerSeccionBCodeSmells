@@ -11,4 +11,18 @@ package ec.edu.espol.codesmells;
 public abstract class Opcion {
     String descripcion;
     String debilidad;
+
+    public String getDescripcion() {
+        return descripcion;
+    }
+
+    public String getDebilidad() {
+        return debilidad;
+    }
+    public boolean ganaContra(Opcion op){
+        return op.debilidad.equals(this.descripcion);
+    }
+    public boolean empataContra(Opcion op){
+        return (!op.descripcion.equals(this.debilidad) && !this.descripcion.equals(op.debilidad));
+    }
 }

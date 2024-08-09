@@ -9,36 +9,23 @@ package ec.edu.espol.codesmells;
  * @author aleja
  */
 public class Player {
+    String nombre;
     int wins;       // # of wins
-    int winTotal;
+    Opcion choice;
 
-    /**
-     * Randomly choose rock, paper, or scissors
-     */
-    public String playerChoice() {
-        String choice = "";
-        int c = (int)(Math.random() * 3);
-        switch(c) {
-            case 0:
-                choice = "rock";
-                break;
-            case 1:
-                choice = "paper";
-                break;
-            case 2:
-                choice = "scissors";
-                break;
-        }
-        return choice;
+    public Player(){
+        this.wins = 0;
+        this.choice = null;
     }
-
-    public int setWins() {
-        int winTotal = wins++;
-        return winTotal;
+    public Opcion getChoice() {
+        return choice;
     }
 
     public int getWins() {
         return wins;
+    }
+    public void increVictorias(){
+        this.wins++;
     }
 }
 
