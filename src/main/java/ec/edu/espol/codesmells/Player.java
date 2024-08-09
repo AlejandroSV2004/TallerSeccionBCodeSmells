@@ -9,14 +9,16 @@ package ec.edu.espol.codesmells;
  * @author aleja
  */
 public class Player {
+
     String nombre;
     int wins;       // # of wins
     Opcion choice;
 
-    public Player(){
+    public Player() {
         this.wins = 0;
         this.choice = null;
     }
+
     public Opcion getChoice() {
         return choice;
     }
@@ -24,8 +26,8 @@ public class Player {
     public int getWins() {
         return wins;
     }
-    public void increVictorias(){
+
+    public void increVictorias() {
         this.wins++;
     }
 }
-

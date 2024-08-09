@@ -9,6 +9,7 @@ package ec.edu.espol.codesmells;
  * @author aleja
  */
 public abstract class Opcion {
+
     String descripcion;
     String debilidad;
 
@@ -19,10 +20,12 @@ public abstract class Opcion {
     public String getDebilidad() {
         return debilidad;
     }
-    public boolean ganaContra(Opcion op){
+
+    public boolean ganaContra(Opcion op) {
         return op.debilidad.equals(this.descripcion);
     }
-    public boolean empataContra(Opcion op){
+
+    public boolean empataContra(Opcion op) {
         return (!op.descripcion.equals(this.debilidad) && !this.descripcion.equals(op.debilidad));
     }
 }

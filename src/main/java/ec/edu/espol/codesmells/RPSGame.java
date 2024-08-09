@@ -9,12 +9,10 @@ package ec.edu.espol.codesmells;
  * @author aleja
  */
 public class RPSGame {
+
     public static void main(String args[]) {
         // Game loop
         GameRPS juego1 = new GameRPS();
         juego1.jugar();
     }
 }
-
-
-

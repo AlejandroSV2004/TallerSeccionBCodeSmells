@@ -8,8 +8,9 @@ package ec.edu.espol.codesmells;
  *
  * @author aleja
  */
-public class Papel extends Opcion{
-    public Papel(){
+public class Papel extends Opcion {
+
+    public Papel() {
         this.descripcion = "Papel";
         this.debilidad = "Tijera";
     }
